@@ -5,17 +5,73 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header ul{
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+}
+
+.left-links{
+  justify-content: flex-start;
+  margin-left: -10px;
+}
+
+.right-links{
+  justify-content: flex-end;
+}
+
+.left-links a, .right-links a{
+  text-decoration: none;
+  color: gray;
+}
+
+.left-links li, .right-links li{
+  margin: 5px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 50px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
 }
 
 img {
   width: 600px;
+
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+  margin: 5px;
 }
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   background: #eee;
+  padding: 5px;
 }
 
 input {
@@ -25,3 +81,17 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+.footer{
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  background-color: #eeeeee;
+}
+
+.footer ul{
+  display: flex;
+  list-style-type: none;
+}
+
+
